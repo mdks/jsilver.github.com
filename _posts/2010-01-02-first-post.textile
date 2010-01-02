@@ -1,7 +1,0 @@
----
-layout: default
-title: My GitHub Blog
----
-
-h2. It's better than yours.
-
