@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- thanks to chris eppstein and brandon mathis -->
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>jsilver.github.com - {{ page.title }}</title>
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!-- maybe jQuery stuff -->
+    <!-- jQuery/twitter stuff -->
   </head>
 
-  <body id="{{ page.body-title }}">
+  <body id="{{ page.title }}">
     <div id="header">
       <ul>
         <li><a href="/">blog</a></li>
         <li><a href="/portfolio">portfolio</a></li>
+        <li><a href="/designs">designs</a></li>
+        <li><a href="/friends">friends</a></li>
       </ul>
     </div>
     <div id="content">
@@ -20,8 +23,9 @@
     </div>
     <div id="sidebar">
       <div id="hire">
+        <h3>Hire me</h3>
         <p>
-          Have an idea that needs to be made a reality?
+          Have an idea that needs to be made a reality or simply need help?
           I am experienced in all the cutting edge web technologies that you need.
           Give me a call or shoot me an e-mail to discuss.
         </p>
@@ -36,8 +40,8 @@
         Since then I have taught myself many programming languages, including VB,
         C++, PHP, and .NET, but recently I have found a favorite in Ruby and friends.</p>
       </div>
-      <div id="contact">
-        <h4>Find me on the web!</h4>
+      <div id="social">
+        <h3>Social Networking</h3>
         <ul>
         <li><a href="http://jsilverman.tumblr.com">My Ruby blog</a></li>
         <li><a href="http://github.com/jsilver">Fork me on Github!</a></li>
@@ -48,8 +52,17 @@
       </div>
     </div>
     <div id="footer">
-      <!-- footer -->
+      <h6>design <span class="amp">&amp;</span> content &copy; 2009 &ndash; jonathan silverman</h6>
     </div>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-12309386-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
   </body>
 </html>
 
