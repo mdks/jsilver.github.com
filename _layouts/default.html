@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>jsilver.github.com - {{ page.title }}</title>
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!-- maybe jQuery stuff -->
   </head>
 
-  <body>
+  <body id="{{ page.body-title }}">
     <div id="header">
-      <!-- links -->
+      <ul>
+        <li><a href="/">blog</a></li>
+        <li><a href="/portfolio">portfolio</a></li>
+      </ul>
     </div>
     <div id="content">
       {{ content }}
+    </div>
+    <div id="sidebar">
+      <div id="about-me">
+        <h3>About me</h3>
+        <p>My name is Jonathan Silverman, I am 21 and
+        have been literally obsessed with computers since a very early age.
+        My very first computer was a Mac Centra 650 with a whopping 22mhz.
+        Since then I have taught myself many programming languages, including VB,
+        C++, PHP, and .NET, but recently I have found a favorite in Ruby and friends.</p>
+        <h4>Find me on the web!</h4>
+        <ul>
+        <li><a href="http://jsilverman.tumblr.com">My Ruby blog</a></li>
+        <li><a href="http://github.com/jsilver">Fork me on Github!</a></li>
+        <li><a href="http://workingwithrails.com/person/18156-jonathan-silverman">My WorkingWithRails profile</a></li>
+        <li><a href="http://twitter.com/jsilverman">Follow me on twitter!</a></li>
+        <li><a href="http://www.linkedin.com/in/jonathansilverman">Connect with me on LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
     <div id="footer">
       <!-- footer -->
