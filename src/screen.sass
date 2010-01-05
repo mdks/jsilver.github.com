@@ -10,8 +10,11 @@
 
 /* @group STRUCTURE */
 body
+  :background url(../images/line_tile.png?938475934)
+  :background-color #ebebeb
   +susy
 
+// all containers
 #header, #content, #footer
   +container
   +sans-family
@@ -19,16 +22,39 @@ body
   &-wrapper
     :padding 0 4em
 
+// everything header
 #header
+  :min-width 900px
   &-wrapper
     :background= !dark_background
-  ul
+  h1.logo
+    +columns(4)
+    +alpha
+    :color= !light_color
+    :padding 1.25em 0
+  ul.nav
     +reset-box-model
     +horizontal-list
-    +alpha
-  a
-    :color= !light_color
+    +columns(6)
+    :display inline !important
+    li
+      :padding 2em 1.5em
+    a
+      :color= !light_color
 
+// cool selector shit
+body#blog     .nav li.blog,
+body#portfolio     .nav li.portfolio,
+body#designs     .nav li.designs,
+body#friends .nav li.friends
+  :border-left 2px solid white
+  :border-right 2px solid white
+  :background url(../images/line_tile.png?9983743)
+  :background-color #999
+  a
+    :font-weight bold
+
+// everything footer
 #footer
   &-wrapper
     :background= !dark_background
@@ -37,45 +63,54 @@ body
     +alpha
     :color= !light_color
 
+// everything content (main container!)
+//#content
+//:clear both
+//:margin-bottom 1em
 
-#content
-  +columns(!total_cols)
-
+// page (left column, fat)
 #page
+  :padding 2em 0em
+  :background white
   +alpha
   +columns(8)
   h1
-    :padding-top 1em
+    :font-size 1.75em
+    :padding 0em 1em
+    :margin 0
   h2
-    :padding-top 1em
     :font-size 1.25em
   h2.subtitle
-    :padding-top 0
-    :padding-bottom 1em
-    :padding-left 0.5em
+    :padding 0em 0em 1em 1.5em
     :font-style italic
   .tumblr_title
     :font-size 1.5em
+  .tumblr_post
+    :padding 0em 1em
   ol
     +no-bullets
     :margin 0
   ul.friends
     +no-bullets
     :margin 0
-    :padding-top 1em
+    :padding 1em 1em
+  #portfolio, #designs, #friends
+    :padding 0em 1em
+    h1
+      :padding 0
+    h2
+      :padding-top 1em
 
+// sidebar (right column, skinny)
 #sidebar
+  :padding 2em 0 2em 0
   +omega
   +columns(4)
-  h3
-    :padding-top 1em
-
-body#blog     .nav li.blog,
-body#portfolio     .nav li.portfolio,
-body#designs     .nav li.designs,
-body#friends .nav li.friends
-  a
-    :font-weight bold
+  p
+    :margin 1em 0em
+  ul
+    +no-bullets
+    :margin 0
 
 
 .showgrid

@@ -27,7 +27,7 @@ body { font-family: Helvetica, Arial, sans-serif; color: #444444; }
 
 a { text-decoration: none; }
 a:link { color: #009999; }
-a:visited { color: #990099; }
+a:visited { color: #009999; }
 a:focus, a:hover, a:active { color: #006666; text-decoration: underline; }
 
 /* @end */
