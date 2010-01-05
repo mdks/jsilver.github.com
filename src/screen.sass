@@ -23,6 +23,7 @@ body
   &-wrapper
     :background= !dark_background
   ul
+    +reset-box-model
     +horizontal-list
     +alpha
   a
@@ -43,10 +44,39 @@ body
 #page
   +alpha
   +columns(8)
+  h1
+    :padding-top 1em
+  h2
+    :padding-top 1em
+    :font-size 1.25em
+  h2.subtitle
+    :padding-top 0
+    :padding-bottom 1em
+    :padding-left 0.5em
+    :font-style italic
+  .tumblr_title
+    :font-size 1.5em
+  ol
+    +no-bullets
+    :margin 0
+  ul.friends
+    +no-bullets
+    :margin 0
+    :padding-top 1em
 
 #sidebar
   +omega
   +columns(4)
+  h3
+    :padding-top 1em
+
+body#blog     .nav li.blog,
+body#portfolio     .nav li.portfolio,
+body#designs     .nav li.designs,
+body#friends .nav li.friends
+  a
+    :font-weight bold
+
 
 .showgrid
   +show-grid("grid.png")

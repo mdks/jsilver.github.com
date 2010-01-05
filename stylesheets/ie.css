@@ -5,9 +5,10 @@ body { font-family: Helvetica, Arial, sans-serif; color: #444444; }
 /* @group links */
 :focus { outline: 1px dotted #777777; color: #006666; }
 
+a { text-decoration: none; }
 a:link { color: #009999; }
 a:visited { color: #990099; }
-a:focus, a:hover, a:active { color: #006666; text-decoration: none; }
+a:focus, a:hover, a:active { color: #006666; text-decoration: underline; }
 
 /* @end */
 /* @group headers */

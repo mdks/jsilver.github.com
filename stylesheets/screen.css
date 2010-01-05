@@ -24,9 +24,10 @@ body { font-family: Helvetica, Arial, sans-serif; color: #444444; }
 /* @group links */
 :focus { outline: 1px dotted #777777; color: #006666; }
 
+a { text-decoration: none; }
 a:link { color: #009999; }
 a:visited { color: #990099; }
-a:focus, a:hover, a:active { color: #006666; text-decoration: none; }
+a:focus, a:hover, a:active { color: #006666; text-decoration: underline; }
 
 /* @end */
 /* @group headers */
@@ -99,7 +100,7 @@ body { text-align: center; font-size: 100%; line-height: 1.5em; }
 #header-wrapper, #content-wrapper, #footer-wrapper { padding: 0 4em; }
 
 #header-wrapper { background: #666666; }
-#header ul { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; margin-left: 1.639%; }
+#header ul { margin: 0; padding: 0; border: 0; outline: 0; margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; margin-left: 1.639%; }
 #header ul { display: block; }
 #header ul li { list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
 #header ul li.first { padding-left: 0px; }
@@ -112,8 +113,19 @@ body { text-align: center; font-size: 100%; line-height: 1.5em; }
 #content { width: 96.721%; display: inline; float: left; margin-right: 1.639%; }
 
 #page { margin-left: 1.639%; width: 63.934%; display: inline; float: left; margin-right: 1.639%; }
+#page h1 { padding-top: 1em; }
+#page h2 { padding-top: 1em; font-size: 1.25em; }
+#page h2.subtitle { padding-top: 0; padding-bottom: 1em; padding-left: 0.5em; font-style: italic; }
+#page .tumblr_title { font-size: 1.5em; }
+#page ol { margin: 0; }
+#page ol li { list-style-type: none; margin-left: 0px; }
+#page ul.friends { margin: 0; padding-top: 1em; }
+#page ul.friends li { list-style-type: none; margin-left: 0px; }
 
 #sidebar { display: inline; float: right; margin-right: 1.639%; /* ugly hacks for IE6-7 */ #margin-right: 0.639%; /* end ugly hacks */ width: 31.148%; display: inline; float: left; margin-right: 1.639%; }
+#sidebar h3 { padding-top: 1em; }
+
+body#blog     .nav li.blog a, body#portfolio     .nav li.portfolio a, body#designs     .nav li.designs a, body#friends .nav li.friends a { font-weight: bold; }
 
 .showgrid { background-image: url('/images/grid.png?1262657000'); background-repeat: repeat; background-position: 1.639% 0; }
 .showgrid * { background: transparent; }
