@@ -1,3 +1,4 @@
+/* Welcome to Susy. Use this file to define print styles. Import this file using the following HTML or equivalent: <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* @group reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
@@ -90,43 +91,4 @@ img { vertical-align: bottom; }
 
 /* @end */
 
-/* @end */
-/* @group STRUCTURE */
-body { text-align: center; font-size: 100%; line-height: 1.5em; }
-
-#header, #content, #footer { overflow: hidden; display: inline-block; text-align: left; margin-left: auto; margin-right: auto; width: 61em; max-width: 100%; font-family: Helvetica, Arial, sans-serif; color: black; }
-#header, #content, #footer { display: block; }
-#header-wrapper, #content-wrapper, #footer-wrapper { padding: 0 4em; }
-
-#header-wrapper { background: #666666; }
-#header ul { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; margin-left: 1.639%; }
-#header ul { display: block; }
-#header ul li { list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
-#header ul li.first { padding-left: 0px; }
-#header ul li.last { padding-right: 0px; }
-#header a { color: white; }
-
-#footer-wrapper { background: #666666; clear: both; }
-#footer h6 { margin-left: 1.639%; color: white; }
-
-#content { width: 96.721%; display: inline; float: left; margin-right: 1.639%; }
-
-#page { margin-left: 1.639%; width: 63.934%; display: inline; float: left; margin-right: 1.639%; }
-
-#sidebar { display: inline; float: right; margin-right: 1.639%; /* ugly hacks for IE6-7 */ #margin-right: 0.639%; /* end ugly hacks */ width: 31.148%; display: inline; float: left; margin-right: 1.639%; }
-
-.showgrid { background-image: url('/images/grid.png?1262657000'); background-repeat: repeat; background-position: 1.639% 0; }
-.showgrid * { background: transparent; }
-.showgrid div { background: rgba(0,0,0,.125); }
-
-/* @end */
-/* @group COMPONENTS by type */
-/* @end */
-/* @group OVERRIDES by content */
-/* @end */
-/* @group OVERRIDES by page */
-/* @end */
-/* @group DEBUG */
-/* uncomment, adjust and use for debugging    */
-/* #page   +show-grid("grid.png") */
 /* @end */

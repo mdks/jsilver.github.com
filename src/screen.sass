@@ -1,0 +1,88 @@
+/* @group reset */
+@import compass/reset.sass
+/* @end */
+
+/* @group defaults */
+@import base.sass
+/* @end */
+
+!dark_background= #666
+
+/* @group STRUCTURE */
+body
+  +susy
+
+#header, #content, #footer
+  +container
+  +sans-family
+  :color= !text_color
+  &-wrapper
+    :padding 0 4em
+
+#header
+  &-wrapper
+    :background= !dark_background
+  ul
+    +horizontal-list
+    +alpha
+  a
+    :color= !light_color
+
+#footer
+  &-wrapper
+    :background= !dark_background
+    :clear both
+  h6
+    +alpha
+    :color= !light_color
+
+
+#content
+  +columns(!total_cols)
+
+#page
+  +alpha
+  +columns(8)
+
+#sidebar
+  +omega
+  +columns(4)
+
+.showgrid
+  +show-grid("grid.png")
+
+
+/* @end */
+
+
+/* @group COMPONENTS by type */
+
+
+
+/* @end */
+
+
+/* @group OVERRIDES by content */
+
+
+
+/* @end */
+
+
+/* @group OVERRIDES by page */
+
+
+
+/* @end */
+
+
+/* @group DEBUG */
+
+/*   uncomment, adjust and use for debugging    */
+
+/*
+  #page
+    +show-grid("grid.png")
+
+/* @end */
+
