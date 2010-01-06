@@ -110,7 +110,7 @@ body { background: url(../images/line_tile.png?938475934); background-color: #eb
 #header ul.nav li { padding: 2em 1.5em; }
 #header ul.nav a { color: white; }
 
-body#blog     .nav li.blog, body#portfolio     .nav li.portfolio, body#designs     .nav li.designs, body#friends .nav li.friends { border-left: 2px solid #630; border-right: 2px solid #630; background: url(../images/line_tile.png?9983743); background-color: #c96; color: #000; letter-spacing: 0.5em; }
+body#blog     .nav li.blog, body#portfolio     .nav li.portfolio, body#designs     .nav li.designs, body#friends .nav li.friends { border-left: 2px solid white; border-right: 2px solid white; background: url(../images/line_tile.png?9983743); background-color: #999; color: #000; letter-spacing: 0.5em; }
 body#blog     .nav li.blog a, body#portfolio     .nav li.portfolio a, body#designs     .nav li.designs a, body#friends .nav li.friends a { font-weight: bold; }
 
 #footer-wrapper { background: #666666; clear: both; }
